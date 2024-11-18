@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaborative Calendar</title>
+    <title>Input Center</title>
     <style>
-        iframe {
-            width: 100%;
-            height: 90vh;
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2596be;
+            color: white;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1b6d8a;
         }
     </style>
 </head>
 <body>
-    <h1>Collaborative Calendar</h1>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxfMOI-k3JRqavjq_8ojuWfh-pxhlJycWKB88KuFASSRLfFSxsI--MVqjp2eM7QfYpFFQdVZ3SPcNP/pubhtml?gid=1386834576&single=true"></iframe>
+    <div class="container">
+        <input type="text" placeholder="Type something...">
+        <br>
+        <button>Submit</button>
+    </div>
 </body>
 </html>
